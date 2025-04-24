@@ -1,4 +1,5 @@
 const express = require("express");
+const morgan = require("morgan");
 const app = express();
 const port = 3000;
 
@@ -13,7 +14,6 @@ app.get("/", (req, res) => {
 })
 
 //Importar morgan
-const morgan = require("morgan");
 morgan.token("body", (req) => JSON.stringify(req.body));
 app.use(morgan(':method :url :status - :response-time ms :body'))
 

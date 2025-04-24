@@ -44,7 +44,7 @@ const createNewAuthor = async (req, res) => {
     res.status(201).send({ message: `Usuario creado: ${email}` });
   } catch (err) {
     console.error(err);
-    res.status(500).send({ message: "Error al crear el autor" });
+    res.status(400).send({ message: "Error al crear el autor" });
   }
 };
 

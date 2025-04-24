@@ -3,7 +3,7 @@ const router = express.Router();
 const authorsController = require("../controllers/author.controller");
 
 // [GET] http://localhost:3000/api/authors
-//router.get("/", authorsController.getAll); //Ruta GET para obtener todos los autores
+//router.get("/", authorsController.getAll);
 
 // [GET] http://localhost:3000/api/authors?email=
 router.get("/", authorsController.getAuthorHandler);

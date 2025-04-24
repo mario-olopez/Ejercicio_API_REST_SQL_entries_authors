@@ -1,5 +1,5 @@
-const pool = require('../config/db_pgsql');
-const queries = require('../queries/author.queries');
+const pool = require("../config/db_pgsql");
+const queries = require("../queries/author.queries");
 
 //Obtener todos los autores
 const getAllAuthors = async () => {

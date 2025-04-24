@@ -1,5 +1,3 @@
-//const { updateAuthorByEmail } = require("../models/author.model")
-
 const queries = {
     getAllAuthors: `
     SELECT 
